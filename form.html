@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Login</h3>
+    <input id = "u" placeholder = "Username">
+    <input id = "p" type = "password" placeholder = "password">
+    <button onclick = "login()">Login</button>
+<p id = "out">
+
+</p></body>
+<body>
+    <script>
+        function login(){
+            let u1 = u.value;
+            let p1 = p.value;
+            out.innerText = (u1==="admin"&& p1==="123")
+            ? "login successful" : "invalid login"; 
+        }
+    </script>
+</body>
+</html>
